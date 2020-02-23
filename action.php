@@ -39,7 +39,7 @@ if(isset($_POST["action"]))
 		SET product_name = '".$_POST["product_name"]."', 
         product_price = '".$_POST["product_price"]."' ,
         product_details = '".$_POST["product_details"]."', 
-        product_img = '".$_POST["product_img"]."', 
+        product_img = '".$_POST["product_img"]."'
 		WHERE id = '".$_POST["hidden_id"]."'
 		";
 		$statement = $connect->prepare($query);
